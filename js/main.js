@@ -54,9 +54,9 @@ BRUSHED.slider = function(){
 		start_slide             :   1,			// Start slide (0 is random)
 		stop_loop				:	0,			// Pauses slideshow on last slide
 		random					: 	0,			// Randomize slide order (Ignores start slide)
-		slide_interval          :   12000,		// Length between transitions
+		slide_interval          :   5000,		// Length between transitions
 		transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-		transition_speed		:	300,		// Speed of transition
+		transition_speed		:	600,		// Speed of transition
 		new_window				:	1,			// Image links open in new window/tab
 		pause_hover             :   0,			// Pause slideshow on hover
 		keyboard_nav            :   1,			// Keyboard navigation on/off
@@ -195,7 +195,7 @@ BRUSHED.contactForm = function(){
 		
 		$.ajax({
 			type: "POST",
-			url: "_include/php/contact.php",
+			url: "php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
@@ -222,7 +222,7 @@ BRUSHED.tweetFeed = function(){
 	var valueTop = -64; // Margin Top Value
 	
     $("#ticker").tweet({
-          modpath: '_include/js/twitter/',
+          modpath: 'js/twitter/',
           username: "Bluxart", // Change this with YOUR ID
           page: 1,
           avatar_size: 0,
@@ -405,7 +405,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '_include/js/placeholder.js', 
+		nope: '/js/placeholder.js', 
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						Placeholders.init({
