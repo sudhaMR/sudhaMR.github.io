@@ -49,14 +49,14 @@ BRUSHED.listenerMenu = function(){
 BRUSHED.slider = function(){
 	$.supersized({
 		// Functionality
-		slideshow               :   1,			// Slideshow on/off
+		slideshow               :   0,			// Slideshow on/off
 		autoplay				:	1,			// Slideshow starts playing automatically
 		start_slide             :   1,			// Start slide (0 is random)
 		stop_loop				:	0,			// Pauses slideshow on last slide
-		random					: 	0,			// Randomize slide order (Ignores start slide)
-		slide_interval          :   5000,		// Length between transitions
-		transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-		transition_speed		:	600,		// Speed of transition
+		random					: 	1,			// Randomize slide order (Ignores start slide)
+		slide_interval          :   200,		// Length between transitions
+		transition              :   0, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+		transition_speed		:	10,		// Speed of transition
 		new_window				:	1,			// Image links open in new window/tab
 		pause_hover             :   0,			// Pause slideshow on hover
 		keyboard_nav            :   1,			// Keyboard navigation on/off
@@ -77,10 +77,11 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'img/slider-images/image01.png', title : '<div class="slide-content">CS</div>', thumb : 'img/slider-images/image01.png', url : ''},
-											{image : 'img/slider-images/leaf.jpg', title : '<div class="slide-content">Art</div>', thumb : 'img/slider-images/leaf.jpg', url : ''},
-											{image : 'img/slider-images/image03.jpg', title : '<div class="slide-content">Education</div>', thumb : 'img/slider-images/image03.jpg', url : ''},
-											{image : 'img/slider-images/image04.png', title : '<div class="slide-content">Design</div>', thumb : 'img/slider-images/image04.png', url : ''}  
+											{image : 'img/slider-images/step1.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/step1.jpg', url : ''},
+											{image : 'img/slider-images/step2.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/step2.jpg', url : ''},
+											{image : 'img/slider-images/step3.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/step3.jpg', url : ''},
+											{image : 'img/slider-images/step4.png', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/step4.png', url : ''},  
+											{image : 'img/slider-images/step1.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/step1.jpg', url : ''}
 									],
 									
 		// Theme Options			   
@@ -164,8 +165,8 @@ BRUSHED.fancyBox = function(){
 		$(".fancybox").fancybox({				
 				padding : 0,
 				beforeShow: function () {
-					this.title = $(this.element).attr('title');
-					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+					this.title = $(this.element).attr('title');				
+					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + $(this.element).attr('url-text').link( $(this.element).attr('url')) + '</p>';
 				},
 				helpers : {
 					title : { type: 'inside' },
@@ -178,6 +179,19 @@ BRUSHED.fancyBox = function(){
 			helpers : {
 				media : {}
 			}
+		});
+
+
+		$('.fancybox-buttons').fancybox({	
+		padding : 0,
+				beforeShow: function () {
+					this.title = $(this.element).attr('title');
+					this.title = '<h5>' + this.title + '</h5>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+				},	
+		helpers		: {
+			title	: { type : 'inside' },
+			buttons	: {}
+		}
 		});
 	}
 }

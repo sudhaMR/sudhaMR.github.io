@@ -34,6 +34,8 @@
 <!-- FancyBox -->
 <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
 
+<link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox-buttons.css"/>
+
 <!-- Font Icons -->
 <link href="css/fonts.css" rel="stylesheet">
 
@@ -156,8 +158,10 @@
                     <ul id="filters" class="option-set" data-option-key="filter">
                     	<li class="type-work">Type of Work</li>
                         <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".design">Sketch</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Digital Works</a></li>
+                        <li><a href="#filter" data-option-value=".sketches">Sketches</a></li>
+                        <li><a href="#filter" data-option-value=".paintings">Paintings</a></li>
+                        <li><a href="#filter" data-option-value=".3d">3D Modelling</a></li>
+                        <li><a href="#filter" data-option-value=".apps">Apps</a></li>
                         <li><a href="#filter" data-option-value=".video">Video</a></li>
                     </ul>
                 </nav>
@@ -170,41 +174,114 @@
                     	<ul id="thumbs">
                         
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
+                        	<li class="item-thumbs span3 sketches">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="img/work/full/Whittles.jpg">
+                            	<!--<a class="hover-wrap fancybox-buttons" data-fancybox-group="button" data-fancybox-group="gallery" href="img/work/full/Whittles.jpg">-->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Harold Whittles" url="img/work/full/Whittles.jpg" url-text="View Full Image" href="img/work/full/Whittles.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="img/work/thumbs/Whittles-thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="img/work/thumbs/Whittles-thumb.jpg" alt="A portrait of Harold Whittles, a boy hearing for the first time. ">
                             </li>
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
+                        	<li class="item-thumbs span3 sketches">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="img/work/full/Katniss.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Katniss Everdeen" url="img/work/full/Katniss.jpg" url-text="View Full Image" href="img/work/full/Katniss.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="img/work/thumbs/Katniss-thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="img/work/thumbs/Katniss-thumb.jpg" alt="A portrait of Katniss Everdeen, the protagonist from The Hunger Games Series. ">
                             </li>
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
+                        	<li class="item-thumbs span3 sketches">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="img/work/full/Cat-and-Butterfly.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Cat and Butterfly" url="img/work/full/Cat-and-Butterfly.jpg" url-text="View Full Image" href="img/work/full/Cat-and-Butterfly.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="img/work/thumbs/Cat-and-Butterfly-thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="img/work/thumbs/Cat-and-Butterfly-thumb.jpg" alt="When the hunter falls for the prey. ">
+                            </li>
+                        	<!-- End Item Project -->
+
+                        	<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 sketches">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="How was it done?" url="img/work/full/Whittle-Sequence.jpg/" url-text="View Full Image" href="img/work/full/Whittle-Sequence.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/work/thumbs/Whittle-Sequence-thumb.jpg" alt="=)">
+                            </li>
+                        	<!-- End Item Project -->
+
+                        	<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 paintings">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Assassin's Creed - Black Flag"  url="img/work/full/AC-Painting.jpg" url-text="View Full Image" href="img/work/full/AC-Painting.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/work/thumbs/AC-Painting-thumb.jpg" alt="Acrylic painting of the protagonist Edward Kenway from Assassin's Creed IV. ">
                             </li>
                         	<!-- End Item Project -->
                             
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 paintings">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Autumn" url="img/work/full/Autumn-Painting.jpg" url-text="View Full Image" href="img/work/full/Autumn-Painting.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/work/thumbs/Autumn-painting-thumb.jpg" alt="An acrylic painting of a fictional autumn afternoon. ">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 paintings">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Husky on a Trek" url="img/work/full/Husky.jpg" url-text="View Full Image" href="img/work/full/Husky.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/work/thumbs/Husky-thumb.jpg" alt="Painted with a mix of Acrylic and Colour Pencils. ">
+                            </li>
+                        	<!-- End Item Project -->      
+
+                        	<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 apps">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Animal Book" url="img/work/full/UnityAnimalBook.jpg" url-text="View Full Image" href="img/work/full/UnityAnimalBook.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/work/thumbs/UnityAnimalBook-thumb.jpg" alt="A digital Animal Book developed in Unity. Features sounds, spellings and descriptions. Also created another version which extracts information from Wiki. ">
+                            </li>
+                        	<!-- End Item Project -->     
+
+                        	<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 apps">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Animal Book" url="img/work/full/LuaAnimalBook.jpg" url-text="View Full Image" href="img/work/full/LuaAnimalBook.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="img/work/thumbs/LuaAnimalBook-thumb.jpg" alt="A digital Animal Book developed in Corona SDK. Features sounds, spellings, videos and descriptions. ">
+                            </li>
+                        	<!-- End Item Project -->                       						
+
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 video">
                             	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
@@ -216,30 +293,7 @@
                                 <img src="img/work/thumbs/image-08.jpg" alt="Video">
                             </li>
                         	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="img/work/full/AC-Painting.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="img/work/thumbs/AC-Painting-thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="img/work/full/Autumn-Painting.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="img/work/thumbs/Autumn-painting-thumb.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
+                            							
                             
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 video">
@@ -252,30 +306,7 @@
                                 <img src="img/work/thumbs/image-09.jpg" alt="Video">
                             </li>
                         	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="img/work/full/image-06-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="img/work/full/image-07-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
+                            				
                         </ul>
                     </section>
                     
@@ -295,7 +326,7 @@
         <div class="span12">
             <div class="title-page">
                 <h2 class="title">About Me</h2>
-                <h3 class="title-description">Learn About our Team &amp; Culture.</h3>
+                <!--<h3 class="title-description">Learn About our Team &amp; Culture.</h3>-->
             </div>
         </div>
     </div>
@@ -309,14 +340,10 @@
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">CTO/Founder</span>
+                    <span class="overlay-text-thumb">Me</span>
                 </div>
-                <img src="img/profile/profile-01.jpg" alt="John Doe">
-            </div>
-            <h3 class="profile-name">John Doe</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
+                <img src="img/profile/profile-01.jpg" alt="Sudha M R">
+            </div>          
             <div class="social">
             	<ul class="social-icons">
                 	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
@@ -325,54 +352,13 @@
                 </ul>
             </div>
         </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-    	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Creative Director</span>
-                </div>
-                <img src="img/profile/profile-02.jpg" alt="Jane Helf">
-            </div>
-            <h3 class="profile-name">Jane Helf</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-email"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-    	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Lead Designer</span>
-                </div>
-                <img src="img/profile/profile-03.jpg" alt="Joshua Insanus">
-            </div>
-            <h3 class="profile-name">Joshua Insanus</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
+        <!-- End Profile -->     
+
+         <!-- Start Profile -->
+    	<div class="span4 profile">        	
+            <h3 class="profile-name">Sudha M R</h3>
+            <p class="profile-description">I am a Computer Science and Engineering student at SSN College of Engineering, Chennai. I am interested in creating. My work involves app development, games, animation, graphic design, virtual reality apps, drawing, baking, diving deep into fiction, a..ahem. I am working towards a career in building products that involve graphics and emerging technologies. Above all, I am interested in interdisciplinary works that experiments with novel media applications. During other times, I can be found feeding dogs, cows, cats, birds and squirrels.</p>            
+        <!-- End Profile -->  
     </div>
     <!-- End People -->
 </div>
@@ -505,7 +491,9 @@
 <script src="js/jquery.isotope.js"></script> <!-- Isotope Filter -->
 <script src="js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
 <script src="js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="js/jquery.fancybox-buttons.js"></script>
 <script src="js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
 <script src="js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="js/main.js"></script> <!-- Default JS -->
 <!-- End Js -->
