@@ -49,7 +49,7 @@
 }
 
 .fancybox-inner {
-
+	overflow: visible;
 	overflow-y: scroll;
 }
 
@@ -223,6 +223,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	overflow-y: scroll;
 	overflow: hidden !important;
 	display: none;
 	z-index: 8010;
@@ -236,8 +237,7 @@
 }
 
 .fancybox-lock .fancybox-overlay {
-	overflow: auto;
-	overflow-y: scroll;
+	overflow: auto;	
 }
 
 /* Title helper */
@@ -260,9 +260,11 @@
 }
 
 .fancybox-opened .fancybox-title p{
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 300;
-	margin-bottom: 0;	
+	margin-bottom:0;	
+	height: 100px;
+	overflow-y: scroll;
 }
 
 .fancybox-title-float-wrap {
@@ -272,6 +274,7 @@
 	margin-bottom: -35px;
 	z-index: 8050;
 	text-align: center;
+	
 }
 
 .fancybox-title-float-wrap .child {
@@ -293,11 +296,13 @@
 .fancybox-title-outside-wrap {
 	position: relative;
 	margin-top: 10px;
-	color: #fff;
+	color: #fff;	
 }
 
 .fancybox-title-inside-wrap {
 	padding: 5px 3px 3px;
+	margin-bottom: 0;
+	
 }
 
 .fancybox-title-over-wrap {
