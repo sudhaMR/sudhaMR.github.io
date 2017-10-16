@@ -77,11 +77,11 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'img/slider-images/Step1.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step1.jpg', url : ''},
-											{image : 'img/slider-images/Step2.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step2.jpg', url : ''},
-											{image : 'img/slider-images/Step3.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step3.jpg', url : ''},
+											{image : 'img/slider-images/Slider-Image-1.png', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Slider-Image-1.png', url : ''},
+											//{image : 'img/slider-images/Step2.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step2.jpg', url : ''},
+											//{image : 'img/slider-images/Step3.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step3.jpg', url : ''},
 											
-											{image : 'img/slider-images/Step1.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step1.jpg', url : ''}
+											//{image : 'img/slider-images/Step1.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step1.jpg', url : ''}
 									],
 									
 		// Theme Options			   
