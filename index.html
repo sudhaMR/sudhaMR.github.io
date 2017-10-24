@@ -104,8 +104,8 @@
     </div>   
 	
 	<div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <!--<a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>-->
         <ul id="slide-list"></ul>
         
         <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
@@ -128,7 +128,7 @@
 				<li><a href="#about">About Me</a></li>            	
                 <li><a href="#work">Portfolio</a></li>                
                 <li><a href="#contact">Contact</a></li>				
-				<li><a href="https://drive.google.com/file/d/0B4Rutuq6rH6kUEh0NEV2Y0x2MzQ/view?usp=sharing" class="external">Resume</a></li>
+				<li><a href="https://drive.google.com/file/d/0B4Rutuq6rH6kZzZLaVp0U25zdDQ/view?usp=sharing" class="external">Resume</a></li>
             </ul>
         </nav>
         
@@ -168,8 +168,9 @@
     	<div class="span4 profile">        	
             <h3 class="profile-name">Sudha M R</h3>
             <p class="profile-description">I am a graduate student at the Entertainment Technology Center at the Carnegie Mellon University. My undergraduate degree is in Computer Science and Engineering from SSN College of Engineering, India. 
-			My work involves app development, games, animation, graphic design and virtual reality apps. I am a hobbyist artist who does pencil sketching, acrylic painting and oil painting. 
-			I am working towards a career in building products that involve graphics and emerging technologies. Above all, I am interested in interdisciplinary works that experiments with novel media applications.</p>            
+			My work involves mobile application development and games development especially in virtual reality. I am also a hobbyist artist. 
+			I am working towards a career in building products that involve graphics and emerging technologies. Above all, I am interested in interdisciplinary works that experiments with novel media applications.</p>   
+		</div>	         
         <!-- End Profile -->  
     </div>
     <!-- End People -->
@@ -185,7 +186,7 @@
             <div class="span12">
                 <div class="title-page">
                     <h2 class="title">Portfolio</h2>
-                    <h3 class="title-description">Check Out Source Code On <a href="https://github.com/sudhaMR">Github</a>.</h3>
+                   <!-- <h3 class="title-description">Check Out Source Code On <a href="https://github.com/sudhaMR">Github</a>.</h3> -->
                 </div>
             </div>
         </div>
@@ -198,12 +199,12 @@
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
                     	<li class="type-work">Type of Work</li>
-						<li><a href="#filter" data-option-value=".apps" class="selected">Apps</a></li>                         
-                        <li><a href="#filter" data-option-value=".sketches">Sketches</a></li>
-                        <li><a href="#filter" data-option-value=".paintings">Paintings</a></li>
-                        <li><a href="#filter" data-option-value=".3d">3D Modelling</a></li>                                              
-                        <li><a href="#filter" data-option-value=".misc">Misc.</a></li>
-						<li><a href="#filter" data-option-value="*">All Projects</a></li>
+                        <li><a href="#filter" data-option-value="*" class="selected" >All Projects</a></li>
+						<li><a href="#filter" data-option-value=".apps">Programming</a></li>                         
+                        <li><a href="#filter" data-option-value=".sketches">Others</a></li>
+                    <!--    <li><a href="#filter" data-option-value=".paintings">Paintings</a></li> -->
+                    <!--    <li><a href="#filter" data-option-value=".3d">3D Modelling</a></li> -->                                              
+                    <!--    <li><a href="#filter" data-option-value=".misc">Misc.</a></li>	-->					
                     </ul>
                 </nav>
                 <!-- End Filter -->
@@ -214,11 +215,12 @@
                 	<section id="projects">
                     	<ul id="thumbs">
 																
-
+							<section id="app-projects">
+							<ul id="app-thumbs">
 							<!-- Item Project and Filter Name -->
                             <li class="item-thumbs span3 apps">
                                 <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                                <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="BB - Maze" href="https://www.youtube.com/edit?o=U&video_id=ZSMg1lahOZ8">
+                                <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="BB - Maze" href="https://www.youtube.com/watch?v=ZSMg1lahOZ8">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -230,7 +232,7 @@
 							<!-- Item Project and Filter Name -->
                             <li class="item-thumbs span3 apps">
                                 <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                                <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Night in the Woods" href="https://www.youtube.com/edit?o=U&video_id=o02HUQJG8cE">
+                                <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Night in the Woods" href="https://www.youtube.com/watch?v=o02HUQJG8cE">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -243,7 +245,7 @@
 							<!-- Item Project and Filter Name -->
                             <li class="item-thumbs span3 apps">
                                 <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                                <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Counting Sheep" href="https://www.youtube.com/edit?o=U&video_id=wTh0132LWWg">
+                                <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Counting Sheep" href="https://www.youtube.com/watch?v=wTh0132LWWg">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -270,75 +272,78 @@
                         	<!-- End Item Project -->
 
                             <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 apps">
+                            <!-- <li class="item-thumbs span3 apps"> -->
                                 <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                                <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Animating in Blender" href="https://www.youtube.com/watch?v=VKI4ZOe2cEA>
+                            <!--    <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Animating in Blender" href="https://www.youtube.com/watch?v=VKI4ZOe2cEA>
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
+                            -->    
                                 <!-- Thumb Image and Description -->
-                                <img src="img/work/thumbs/AnimationDemo-thumb.jpg" alt="Animating the model used in the Learn ASL application in Blender. Date: April 2016">
-                            </li>
+                             <!--   <img src="img/work/thumbs/AnimationDemo-thumb.jpg" alt="Animating the model used in the Learn ASL application in Blender. Date: April 2016">
+                            </li> 
+                            -->
                             <!-- End Item Project --> 													      
 
                             <!-- Item Project and Filter Name -->
                             <li class="item-thumbs span3 apps">
-                                <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
                                 <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Augmented Reality Textbook Companion" href="https://youtu.be/QAFW8_cat3A>
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
                                 <img src="img/work/thumbs/AchARya-thumb.jpg" alt="An Augmented Reality Textbook Companion App - AchARya, literally translates to teacher from Sanksrit. Built for the 32-Hour Startup Challenge in Unity3D, the app uses Vuforia SDK. Specific diagrams in the book are chosen and indexed, pointing the app camera on which displays interactive content like 3D models or videos. Date: August 2015 ">
                             </li>
                             <!-- End Item Project -->   	
 
                         	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 apps">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                       <!-- 	<li class="item-thumbs span3 apps">
                             	<a class="hover-wrap fancybox" data-fancybox-group="apps" title="Animal Book" url="" url-text="" href="img/work/full/UnityAnimalBook.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
                                 <img src="img/work/thumbs/UnityAnimalBook-thumb.jpg" alt="A digital Animal Book developed in Unity. Features sounds, spellings and descriptions. Also created another version which extracts information from MediaWiki. MediaWiki API is used and a query is sent through Unity to download the thumbnails and information. Thumbnails are downloaded the first time and stored in the local storage. Image and Sound Assets used here are licensed under Common Creatives. The layouts, buttons and designs are designed by me using Adobe Photoshop. Date: April 2015 ">
                             </li>
+                        -->    
                         	<!-- End Item Project -->     
 
                         	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 apps">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                        	<!--<li class="item-thumbs span3 apps">
                             	<a class="hover-wrap fancybox" data-fancybox-group="apps" title="Animal Book" url="" url-text="" href="img/work/full/LuaAnimalBook.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
                                 <img src="img/work/thumbs/LuaAnimalBook-thumb.jpg" alt="A digital Animal Book developed in Corona SDK. Features sounds, spellings, videos and descriptions.Assets used here are licensed under Common Creatives. The layouts and designs are designed by me. The app aims to introduce kindergarten kids to learn about animals and their features through sounds and visuals. Bold attractive fonts and colourful interface makes it fun to use. Tile based interface is used along with light and attractive thumbnails.Image and Sound Assets used here are licensed under Common Creatives. The layouts, buttons and designs are designed by me. Date: March 2016 ">
                             </li>
+                        -->
                         	<!-- End Item Project -->                                  
 
                         	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 apps">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                        <!--	<li class="item-thumbs span3 apps">
                             	<a class="hover-wrap fancybox" data-fancybox-group="apps" title="Animal Book" url="" url-text="" href="img/work/full/DAGDraw.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
                                 <img src="img/work/thumbs/DAG-thumb.jpg" alt="A DAG drawing tool developed in Corona SDK. The app aims to make drawing DAGs natural in touch screen devices. User can roughly draw nodes and edges and the app automatically converts them into vectors. DAG (Directed Acyclic Graph) drawing rules are implemented. Adding of edges without nodes is forbidden. A node cannot have edges without connecting another node. Date: August 2015 ">
                             </li>
+                        -->
                         	<!-- End Item Project -->   
 
-                            <li class="item-thumbs span3 apps">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                        <!-- <li class="item-thumbs span3 apps">
                                 <a class="hover-wrap fancybox" data-fancybox-group="apps" title="The Royal Adventure" url="https://sudhamr.itch.io/the-royal-adventure" url-text="View Game" href="img/work/full/RoyalAdventure.jpg">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
                                 <img src="img/work/thumbs/RoyalAdventure-thumb.jpg" alt="A 2D platform game developed in Unity. Developed two levels as part of the course : Game Development for Modern Platforms (MOOC). Level 1 was part of the instruction, Level 2 is completely designed and developed by me. SkyBox and Ground assets are downloaded from Unity Asset Store. Date: January 2016">
                             </li>
-                            <!-- End Item Project -->              										
+                        -->
+                            <!-- End Item Project -->     
+							
+							
+							
+							
+							</ul>
+							</section>
+							         										
                         
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 sketches">
@@ -354,15 +359,14 @@
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 sketches">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                        <!--	<li class="item-thumbs span3 sketches">                            	
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Katniss Everdeen" url="img/work/full/Katniss.jpg" url-text="View Full Image" href="img/work/full/Katniss.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
                                 <img src="img/work/thumbs/Katniss-thumb.jpg" alt="A portrait of Katniss Everdeen, the protagonist from The Hunger Games Series.  This portrait was made with a combination of HB and 8B drawing pencils on standard drawing paper. Date: October 2015">
                             </li>
+                        -->
                         	<!-- End Item Project -->
 
                         	<!-- Item Project and Filter Name -->
@@ -391,61 +395,57 @@
                         	<!-- End Item Project -->
 
                         	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 sketches">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                        <!--	<li class="item-thumbs span3 sketches">
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="How was it done?" url="img/work/full/Whittle-Sequence.jpg" url-text="View Full Image" href="img/work/full/Whittle-Sequence.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
                                 <img src="img/work/thumbs/Whittle-Sequence-thumb.jpg" alt="A collage of the sketch of Harold Whittles in various stages. Date: July 2016">
                             </li>
+                        -->
                         	<!-- End Item Project -->
                         	
 
                         	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 paintings">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                        <!--    <li class="item-thumbs span3 paintings">
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Assassin's Creed - Black Flag"  url="img/work/full/AC-Painting.jpg" url-text="View Full Image" href="img/work/full/AC-Painting.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
                                 <img src="img/work/thumbs/AC-Painting-thumb.jpg" alt="Acrylic painting of the protagonist Edward Kenway from Assassin's Creed IV. Date: September 2014">
                             </li>
+                        -->
                         	<!-- End Item Project -->
                             							
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 paintings">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                        <!--	<li class="item-thumbs span3 paintings">
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Husky on a Trek" url="img/work/full/Husky.jpg" url-text="View Full Image" href="img/work/full/Husky.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
                                 <img src="img/work/thumbs/Husky-thumb.jpg" alt="Painted with a mix of Acrylic and Colour Pencils on standard drawing paper. Date: June 2016 ">
                             </li>
+                        -->
                         	<!-- End Item Project -->
 
                         	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 paintings">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                       <!-- 	<li class="item-thumbs span3 paintings">                            	
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Ellie" url="img/work/full/Ellie.jpg" url-text="View Full Image" href="img/work/full/Ellie.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
                                 <img src="img/work/thumbs/Ellie-thumb.jpg" alt="An acrylic painting of Ellie, protogonist from the video game Last of Us. Date: September 2014">
                             </li>
+                        -->
                         	<!-- End Item Project -->   
 
                         	
 							<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                         	<!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 3d">
+                            <li class="item-thumbs span3 sketches">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="3d" title="Black vs White"  url="img/work/full/Chess.jpg" url-text="View Full Image" href="img/work/full/Chess.jpg">
+                                <a class="hover-wrap fancybox" data-fancybox-group="sketches" title="Black vs White"  url="img/work/full/Chess.jpg" url-text="View Full Image" href="img/work/full/Chess.jpg">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -521,7 +521,7 @@
                         <li><a href="https://plus.google.com/+SudhaMRaghavan" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
                         <li><a href="https://www.linkedin.com/in/sudhamr" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
                         <li><a href="https://www.behance.net/sudhamr" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
-                        <li><a href="#"><span class="font-icon-social-500px"></span></a></li>
+                        <!--<li><a href="#"><span class="font-icon-social-500px"></span></a></li>-->
                        
                     </ul>
                 </nav>

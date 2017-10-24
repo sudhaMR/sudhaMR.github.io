@@ -110,16 +110,16 @@ BRUSHED.filter = function (){
 	if($('#projects').length > 0){		
 		var $container = $('#projects');
 		
-		$container.imagesLoaded(function() {
+		$container.imagesLoaded(function() {			
 			$container.isotope({
 			  // options
 			  animationEngine: 'best-available',
 			  itemSelector : '.item-thumbs',
-			  layoutMode : 'fitRows'
+			  layoutMode : 'fitRows'			  
+
 			});
-		});
-	
 		
+		});
 		// filter items when filter link is clicked
 		var $optionSets = $('#options .option-set'),
 			$optionLinks = $optionSets.find('a');
@@ -147,8 +147,7 @@ BRUSHED.filter = function (){
 			} else {
 			  // otherwise, apply new options
 			  $container.isotope( options );
-			}
-			
+			}		
 			return false;
 		});
 	}
