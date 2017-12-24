@@ -49,14 +49,14 @@ BRUSHED.listenerMenu = function(){
 BRUSHED.slider = function(){
 	$.supersized({
 		// Functionality
-		slideshow               :   0,			// Slideshow on/off
-		autoplay				:	0,			// Slideshow starts playing automatically
+		slideshow               :   1,			// Slideshow on/off
+		autoplay				:	1,			// Slideshow starts playing automatically
 		start_slide             :   1,			// Start slide (0 is random)
 		stop_loop				:	0,			// Pauses slideshow on last slide
-		random					: 	1,			// Randomize slide order (Ignores start slide)
-		slide_interval          :  400,		// Length between transitions
+		random					: 	0,			// Randomize slide order (Ignores start slide)
+		slide_interval          : 10000,		// Length between transitions
 		transition              :   0, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-		transition_speed		:	80,		// Speed of transition
+		transition_speed		:	2000,		// Speed of transition
 		new_window				:	1,			// Image links open in new window/tab
 		pause_hover             :   0,			// Pause slideshow on hover
 		keyboard_nav            :   1,			// Keyboard navigation on/off
@@ -75,13 +75,12 @@ BRUSHED.slider = function(){
 		// Components							
 		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 		thumb_links				:	0,			// Individual thumb links for each slide
-		thumbnail_navigation    :   0,			// Thumbnail navigation
+		thumbnail_navigation    :   1,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
 											{image : 'img/slider-images/Round1-optimized-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round1-optimized-gif.gif', url : ''},
-											//{image : 'img/slider-images/Step2.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step2.jpg', url : ''},
-											//{image : 'img/slider-images/Step3.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step3.jpg', url : ''},
-											
-											//{image : 'img/slider-images/Step1.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step1.jpg', url : ''}
+											{image : 'img/slider-images/Round2-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round2-gif.gif', url : ''},
+											{image : 'img/slider-images/Round4-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round4-gif.gif', url : ''},											
+											{image : 'img/slider-images/Round5-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round5-gif.gif', url : ''}
 									],
 									
 		// Theme Options			   
