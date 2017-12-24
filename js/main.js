@@ -77,7 +77,7 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'img/slider-images/Round1-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round1-gif.gif', url : ''},
+											{image : 'img/slider-images/Round1-optimized-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round1-optimized-gif.gif', url : ''},
 											//{image : 'img/slider-images/Step2.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step2.jpg', url : ''},
 											//{image : 'img/slider-images/Step3.jpg', title : '<div class="slide-content"></div>', thumb : 'img/slider-images/Step3.jpg', url : ''},
 											
