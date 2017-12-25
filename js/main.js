@@ -80,7 +80,7 @@ BRUSHED.slider = function(){
 											{image : 'img/slider-images/Round1-optimized-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round1-optimized-gif.gif', url : ''},
 											{image : 'img/slider-images/Round2-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round2-gif.gif', url : ''},
 											{image : 'img/slider-images/Round4-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round4-gif.gif', url : ''},											
-											{image : 'img/slider-images/Round5-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round5-gif.gif', url : ''}
+											{image : 'img/slider-images/Togo-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Togo-gif.gif', url : ''}
 									],
 									
 		// Theme Options			   
