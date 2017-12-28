@@ -562,18 +562,18 @@
             </div>
         </div>
     </div>-->
-    <form id="contact-form" class="contact-form" action="_include/php/contact.php" method="post">
+    <form id="contact-form" class="contact-form" action="http://formspree.io/sudhamr8@gmail.com" method="POST">
                 <p class="contact-name">
                     <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
                 </p>
                 <p class="contact-email">
-                    <input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                    <input id="contact_email" type="email" placeholder="Email Address" value="" name="_replyto" />
                 </p>
                 <p class="contact-message">
-                    <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                    <textarea id="contact_message" placeholder="Your Message" name="body" rows="15" cols="40"></textarea>
                 </p>
                 <p class="contact-submit">
-                    <a id="contact-submit" class="submit" value="Submit">Send Your Email</a>
+                    <a id="contact-submit" type="submit" class="submit" value="Send" href="#">Send Your Email</a>
                 </p>
                 
                 <div id="response">
