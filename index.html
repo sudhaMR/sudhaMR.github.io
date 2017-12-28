@@ -562,7 +562,7 @@
             </div>
         </div>
     </div>-->
-    <form id="contact-form" class="contact-form" action="#">
+    <form id="contact-form" class="contact-form" action="_include/php/contact.php" method="post">
                 <p class="contact-name">
                     <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
                 </p>
@@ -573,7 +573,7 @@
                     <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
                 </p>
                 <p class="contact-submit">
-                    <a id="contact-submit" class="submit" href="#">Send Your Email</a>
+                    <a id="contact-submit" class="submit" value="Submit">Send Your Email</a>
                 </p>
                 
                 <div id="response">
