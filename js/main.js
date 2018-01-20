@@ -114,8 +114,8 @@ BRUSHED.filter = function (){
 			  // options
 			  animationEngine: 'best-available',
 			  itemSelector : '.item-thumbs',
-			  layoutMode : 'fitRows'			  
-
+			  layoutMode : 'fitRows',			  
+			  filter : '.apps'
 			});
 		
 		});
