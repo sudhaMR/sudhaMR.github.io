@@ -132,7 +132,7 @@ BRUSHED.filter = function (){
 			var $optionSet = $this.parents('.option-set');
 			$optionSet.find('.selected').removeClass('selected');
 			$this.addClass('selected');
-	  
+	  		
 			// make option object dynamically, i.e. { filter: '.my-filter-class' }
 			var options = {},
 				key = $optionSet.attr('data-option-key'),
