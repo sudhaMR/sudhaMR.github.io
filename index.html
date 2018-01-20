@@ -79,6 +79,19 @@
 
 </script>
 <!-- End Analytics -->
+<script  type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js">
+    $(document).ready(function () {
+            var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+            if (window.location.hash && isChrome) {
+                setTimeout(function () {
+                    var hash = window.location.hash;
+                    window.location.hash = "";
+                    console.log('In chrome');
+                    window.location.hash = hash;
+                }, 300);
+            }
+        });
+</script>
 
 </head>
 
@@ -109,7 +122,7 @@
         <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>-->
         <ul id="slide-list"></ul>
         
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+        <a id="nextsection" href="#about"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
 </div>
 <!-- End Homepage Slider -->
@@ -124,14 +137,16 @@
         </div>
         
         <nav id="menu">
-        	<ul id="menu-nav">
-				<li class="current"><a href="#home-slider">Home</a></li>
-				<li><a href="#about">About Me</a></li>            	
-                <li><a href="#work">Portfolio</a></li>                
-                <li><a href="#contact">Contact</a></li>	
-                <li><a href="#social-area">Social</a></li> 			
-				<li><a href="http://www.etc.cmu.edu/wp-content/uploads/2013/08/Sudha-M-R-Resume-4.pdf" class="external">Resume</a></li>
-            </ul>
+           
+            	<ul id="menu-nav">
+    				<li class="current"><a id="nextsection" href="#home-slider">Home</a></li>
+    				<li><a id="nextsection" href="#about">About Me</a></li>            	
+                    <li><a id="nextsection" href="#work">Portfolio</a></li>                
+                    <li><a id="nextsection" href="#contact">Contact</a></li>	
+                    <li><a id="nextsection" href="#social-area">Social</a></li> 			
+    				<li><a href="http://www.etc.cmu.edu/wp-content/uploads/2013/08/Sudha-M-R-Resume-4.pdf" class="external">Resume</a></li>
+                </ul>
+         
         </nav>
         
     </div>
@@ -170,8 +185,8 @@
     	<div class="span4 profile">        	
             <h3 class="profile-name">Sudha M R</h3>
             <p class="profile-description">I am a graduate student at the Entertainment Technology Center at the Carnegie Mellon University. My undergraduate degree is in Computer Science and Engineering. 
-			My work involves game development especially in virtual reality. I am also a hobbyist artist. 
-			Above all, I am interested in working with emerging technologies.</p>   
+			I am currently pursuing my graduate degree in Entertainment Technology. My areas of interest include Virtual Reality and Augmented Reality, Game Development, Mobile application development, and, Emerging Media Applications. I am also a hobbyist artist. 
+			</p>   
 		</div>	         
         <!-- End Profile -->  
     </div>

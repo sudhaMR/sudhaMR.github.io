@@ -269,10 +269,11 @@ BRUSHED.tweetFeed = function(){
 
 BRUSHED.menu = function(){
 	$('#menu-nav, #menu-nav-mobile').onePageNav({
+
 		currentClass: 'current',
     	changeHash: false,
     	scrollSpeed: 750,
-    	scrollOffset: 30,
+    	scrollOffset: 100,
     	scrollThreshold: 0.5,
 		easing: 'easeOutExpo',
 		filter: ':not(.external)'
@@ -284,7 +285,7 @@ BRUSHED.menu = function(){
 ================================================== */
 
 BRUSHED.goSection = function(){
-	$('#nextsection').on('click', function(){
+	$('#nextsection', '#menu-nav, #menu-nav-mobile').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
 		
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
