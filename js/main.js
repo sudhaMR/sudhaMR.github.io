@@ -285,7 +285,7 @@ BRUSHED.menu = function(){
 ================================================== */
 
 BRUSHED.goSection = function(){
-	$('#nextsection', '#menu-nav, #menu-nav-mobile').on('click', function(){
+	$('#nextsection', '#menu-nav', '#menu-nav-mobile').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
 		
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
