@@ -50,7 +50,7 @@ BRUSHED.slider = function(){
 	$.supersized({
 		// Functionality
 		slideshow               :   1,			// Slideshow on/off
-		autoplay				:	1,			// Slideshow starts playing automatically
+		autoplay				:	0,			// Slideshow starts playing automatically
 		start_slide             :   1,			// Start slide (0 is random)
 		stop_loop				:	0,			// Pauses slideshow on last slide
 		random					: 	0,			// Randomize slide order (Ignores start slide)
@@ -78,9 +78,10 @@ BRUSHED.slider = function(){
 		thumbnail_navigation    :   1,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
 											//{image : 'img/slider-images/Round1-optimized-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round1-optimized-gif.gif', url : ''},
-											//{image : 'img/slider-images/Round2-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round2-gif.gif', url : ''},
-											{image : '', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Round4-gif.gif', url : ''},											
-											//{image : 'img/slider-images/Togo-gif.gif', title : '<div class="slide-content">Portfolio</div>', thumb : 'img/slider-images/Togo-gif.gif', url : ''}
+											{image : '', title : '<div class="video-container"><iframe src="http://player.vimeo.com/video/50834315?byline=0&amp;portrait=0&amp;badge=0&amp;color=DE5E60" width="400" height="220"></iframe>Link</div>', thumb : 'img/slider-images/Round2-gif.gif', url : ''},
+											//{image : 'img/slider-images/Slider-2018.png', title : '<a href="https://sudhamr.wordpress.com/2018/12/22/theatar-project-neverland/"><div class="slide-content">Link</div></a>', thumb : 'img/slider-images/Round4-gif.gif', url : 'https://sudhamr.wordpress.com/2018/12/22/theatar-project-neverland/'},											
+											{image : 'img/slider-images/Togo-gif.gif', title : '<a href="https://sudhamr.wordpress.com/2018/12/22/theatar-project-neverland/"><div class="slide-content">Togo</div></a>', thumb : 'img/slider-images/Togo-gif.gif', url : ''}
+
 									],
 									
 		// Theme Options			   
