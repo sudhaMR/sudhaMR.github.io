@@ -47,7 +47,7 @@ a:hover,
 a:active,
 a:focus{
 	outline: 0;
-	color:#FFFFFF;
+	color:#000000;
 	text-decoration:none;
 }
 
@@ -868,7 +868,7 @@ nav#menu #menu-nav li a:hover {
 
 .social-icons {
 	margin: 0;
-	padding: 0;
+	padding: 15px;
 }
 
 .social-icons li {
